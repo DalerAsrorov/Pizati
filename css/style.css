@@ -1,0 +1,308 @@
+html, body, .wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #e5f8ff;
+  font-family: 'Lato', sans-serif;
+}
+
+#navContainer {
+  margin: 0;
+  width: 100%;
+}
+
+#toolbar {
+  background: #fff;
+}
+
+#editor {
+  background: #fff;
+}
+
+#editorContainer {
+
+}
+
+#editor {
+  width: 60%;
+}
+
+#leftOptions {
+  width: 20%;
+}
+
+#rightOptions {
+  width: 20%;
+}
+
+.editor-el {
+  float: left;
+}
+
+.pizati-nav-part {
+  font-size: 36px;
+  font-weight: 600;
+  padding: 0;
+}
+
+.essay-nav-part {
+  font-size: 22px;
+  font-weight: 100;
+  line-height: 2.7;
+}
+
+.nav-section {
+  height: 60px;
+  background: #366aff;
+  color: #fff;
+  border-right: 1px solid #fff;
+
+}
+
+.nav-button-section  {
+  width: 30%;
+  height: 100%;
+  border-radius: 0;
+}
+
+.nav-name-section {
+  height: 100%;
+  width: 70%;
+  color: #27acf1;
+  line-height: 1.65;
+}
+
+.nav-el {
+  float: left;
+
+  color: white;
+}
+
+.nav-glyph {
+  font-size: 40px;
+  border-radius: 0;
+  color: #fff;
+}
+
+.glyph-a {
+  background: #366aff;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  position: relative;
+  top: 10px;
+  left: 15px;
+}
+
+.pizati-text {
+  color: #fff;
+}
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+#editorSection {
+  height: 100%;
+  background: #54656f;
+}
+
+.ng-scope {
+
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+      /*width: 250px;*/
+      width: 20%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.width-height-100 {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-and-content {
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 80%;
+}
+
+.navbar {
+  margin: 0;
+  background: #fff;
+}
+
+.sub-nav {
+  width: 30%;
+  float: right;
+  /* text-align: right; */
+  padding-right: 0;
+}
+
+.text-area {
+  background: #fff;
+  width: 70%;
+  height: 730px;
+  /* position: relative; */
+  margin: 0 auto;
+  position: relative;
+  top: 20px;
+}
+
+.text-list-ul li {
+  list-style-type: none;
+}
+
+.text-list-ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.section-button-li {
+
+}
+
+.plus-icon {
+  font-size: 20px;
+}
+
+.section-button {
+  padding: 10px;
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  float: none;
+}
+
+.pizati-tutorial-wrapper {
+    /*background: blue;*/
+}
+
+#editorContainer {
+
+}
+
+.essay-field {
+
+}
