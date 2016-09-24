@@ -60,14 +60,3 @@
     </div>
   </div>
 </div>
-
-<script type="text/javascript">
-setEditorHeight();
-function setEditorHeight() {
-  var browserHeight = isNaN(window.innerWidth) ? window.clientWidth : window.innerWidth;
-  // var height = isNaN(window.innerHeight) ? window.clientHeight : window.innerHeight;
-  var fixedEditorHeight = browserHeight * 0.75;
-  console.log(fixedEditorHeight);
-  document.getElementById("superDivEditor").style.height = (fixedEditorHeight + "px").toString();
-};
-</script>

@@ -6,8 +6,9 @@ html, body, .wrapper {
 }
 
 body {
-  background: #e5f8ff;
+  background: #d4e5ff;
   font-family: 'Lato', sans-serif;
+  overflow: hidden;
 }
 
 ul {
@@ -41,6 +42,56 @@ ul li{
   width: 100%;
 }
 
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+#editorSection {
+  height: 100%;
+  background: #54656f;
+}
+
+#essayPartsWrapper {
+
+}
+
 #leftOptions {
   width: 20%;
 }
@@ -59,6 +110,56 @@ ul li{
 #buttonsList {
   margin: 0;
   padding: 0;
+}
+
+#pizatiDashboardWrapper {
+
+}
+
+#tutorialsWrapper {
+  height: 230px;
+  background: #ebebff;
+  padding: 10px;
+}
+
+#tutorialsWrapper ul {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+#tutorialsWrapper ul li {
+  list-style-type: none;
+  height: 180px;
+  width: 180px;
+  background: #fff;
+  display: inline-block;;
+  vertical-align: middle;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+#tutorialsWrapper ul li:nth-last-child(0n+1) {
+  margin: 0;
+}
+
+#tutorialsWrapper ul li:nth-child(2) {
+  width: 2px;
+  margin-right: 100px;
+}
+
+
+#tutorialsWrapper ul li a {
+
+}
+
+.full {
+  width: 100%;
+  height: 100%;
+}
+
+.ng-scope {
+  height: 100%;
 }
 
 .editor-el {
@@ -126,55 +227,7 @@ ul li{
 
 /* Toggle Styles */
 
-#wrapper {
-    padding-left: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
 
-#wrapper.toggled {
-    padding-left: 250px;
-}
-
-#sidebar-wrapper {
-    z-index: 1000;
-    position: fixed;
-    left: 250px;
-    height: 100%;
-    margin-left: -250px;
-    overflow-y: auto;
-    background: #000;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-#wrapper.toggled #sidebar-wrapper {
-    width: 250px;
-}
-
-#page-content-wrapper {
-    width: 100%;
-    position: absolute;
-    padding: 15px;
-}
-
-#wrapper.toggled #page-content-wrapper {
-    position: absolute;
-    margin-right: -250px;
-}
-
-#editorSection {
-  height: 100%;
-  background: #54656f;
-}
-
-#essayPartsWrapper {
-
-}
 
 .ng-scope {
 
@@ -423,4 +476,14 @@ essay-list-item:hover {
   margin: 0 auto;
   margin-top: 100px;
   text-align: center;
+}
+
+.tutorial-li {
+}
+
+.vertical_line {
+  height: 100%;
+  width: 100%;
+  background: #86a6ff;
+  margin: 0;
 }
