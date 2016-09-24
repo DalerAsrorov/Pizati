@@ -1,0 +1,59 @@
+{
+  "essays":
+    [
+      {
+        "author": {
+          "name": "David Guetta"
+        },
+        "essay": {
+          "title": "Cry, Wolf",
+          "text": "Essay 1 Text."
+        }
+      },
+      {
+        "author": {
+          "name": "'Grazy Wolf'"
+        },
+        "essay": {
+          "title": "A Shattered Sky",
+          "text": "Essay 2 Text."
+        }
+      },
+      {
+        "author": {
+          "name": "'Daler Asrorov'"
+        },
+        "essay": {
+          "title": "Software Engineering Practices",
+          "text": "Essay 3 Text."
+        }
+      },
+      {
+        "author": {
+          "name": "Robert Calm"
+        },
+        "essay": {
+          "title": "Not That Awesome",
+          "text": "Essay 4 Text."
+        }
+      },
+      {
+        "author": {
+          "name": "Randy Palanca"
+        },
+        "essay": {
+          "title": "Some Wise Words.",
+          "text": "Essay 5 Text."
+        }
+      },
+      {
+        "author": {
+          "name": "Double Dark"
+        },
+        "essay": {
+          "title": "Dark Nights",
+          "text": "Essay 5 Text."
+        }
+      }
+    ]
+}

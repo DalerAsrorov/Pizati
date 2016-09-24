@@ -10,6 +10,14 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+ul {
+    list-style-type: none;
+}
+
+ul li{
+    list-style-type: none;
+}
+
 #navContainer {
   margin: 0;
   width: 100%;
@@ -21,6 +29,7 @@ body {
 
 #editor {
   background: #fff;
+  height: 100%;
 }
 
 #editorContainer {
@@ -28,7 +37,8 @@ body {
 }
 
 #editor {
-  width: 60%;
+  /*width: 60%;*/
+  width: 100%;
 }
 
 #leftOptions {
@@ -37,6 +47,18 @@ body {
 
 #rightOptions {
   width: 20%;
+}
+
+#superDivEditor {
+  width: 60%;
+  float: left;
+  position: relative;
+  height: 700px;
+}
+
+#buttonsList {
+  margin: 0;
+  padding: 0;
 }
 
 .editor-el {
@@ -148,6 +170,10 @@ body {
 #editorSection {
   height: 100%;
   background: #54656f;
+}
+
+#essayPartsWrapper {
+
 }
 
 .ng-scope {
@@ -305,4 +331,92 @@ body {
 
 .essay-field {
 
+}
+
+.essay-button {
+  width: 80%;
+}
+
+.essay-list-item {
+  padding: 5px 5px 0px 5px;
+  background: #fff;
+  border: 1px solid #a2c7ff;
+  font-size: 13px;
+}
+
+.essays-container {
+  text-align: center;
+}
+
+.essay-buttons-ul {
+  padding: 0;
+  margin: 0;
+  float: none;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.underline {
+  height: 5px;
+  background: #e6bebe;
+  margin-top: 5px;
+  width: 40%;
+  margin: 5px auto 0px auto;
+  border-radius: 100px 100px 10px 10px;
+  -moz-border-radius: 100px 100px 10px 10px;
+  -webkit-border-radius: 100px 100px 10px 10px;
+  border: 0px solid #000000;
+}
+
+.essay-list-item:hover {
+  cursor: pointer;
+  background: #e8f9ff;
+}
+
+.footer-start {
+  height: 40px;
+  padding: 5px;
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-start .btn {
+  width: 40%;
+  display: block;
+  line-height: 1.0;
+  margin: 0 auto;
+  height: 30px;
+  font-weight: 800;
+}
+
+.essay-author-name {
+  font-style: italic;
+  font-size: 12px;
+  color: #abaaaa;
+}
+
+.essay-title {
+  font-weight: 700;
+}
+
+.essay-part-button-li {
+  padding: 5px;
+  background: white;
+  border: 1px solid lightgrey;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+}
+
+.essay-part-button {
+
+}
+
+.start-message-wrapper {
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
 }

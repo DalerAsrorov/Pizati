@@ -1,7 +1,7 @@
 <!-- Sidebar -->
 <div class="wrapper pizati-tutorial-wrapper row">
   <div id="editorContainer">
-    <div class="" id = "toolbar">
+    <div class="" id ="toolbar" ng-show="vm.essayStarted">
       <select class="ql-size">
         <option value="small"></option>
         <!-- Note a missing, thus falsy value, is used to reset to default -->
@@ -16,16 +16,46 @@
       <!-- Add subscript and superscript buttons -->
       <button class="ql-script" value="sub"></button>
       <button class="ql-script" value="super"></button>
+      <button class="ql-formula" value="super"></button>
+      <button type="button" class="ql-font"></button>
     </div>
     <div class="whole">
       <div id="leftOptions" class="editor-el">
-        dfs
+        <div id="essayPartsWrapper">
+          <div class="start-message-wrapper" ng-show="!vm.essayStarted">
+            <h4> Press "Start" to begin. </h4>
+          </div>
+          <ul id="buttonsList" ng-show="vm.essayStarted">
+            <li ng-repeat="item in vm.customEssayButtons" class="essay-part-button-li">
+              <a href="#" class="essay-part-button"> {{ item.name }} </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div id="editor" class="editor-el essay-field">
-        dsf
+      <div id="superDivEditor">
+        <div id="editor" class="editor-el essay-field">
+        </div>
+        <div class="footer-start" ng-if="!vm.essayStarted">
+          <button type="button" class="btn btn-info" name="button" ng-click="vm.startTutorial()">
+            Start
+          </button>
+        </div>
       </div>
       <div id="rightOptions" class="editor-el">
-        dsffd
+        <div class="essays-container">
+          <ul class="essay-buttons-ul">
+            <li ng-repeat="item in vm.authrEssayDataStructure" class="essays-list-li">
+              <div class="essay-list-item">
+                <div class="essay-name">
+                  <div class="essay-title">{{item.essay.title}}</div>
+                  <div class="essay-author-name">by {{item.author.name}}</div>
+                </div>
+                <div class="underline">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

@@ -7,6 +7,11 @@ angular
         controller: 'PizatiCtrl',
         controllerAs: 'vm'
       })
+      .when('/dasbhoard', {
+        templateUrl: '/templates/dashboard.html',
+        controller: 'DashCtrl',
+        controllerAs: 'vm'
+      })
       .otherwise({
         redirectTo: '/'
       });
