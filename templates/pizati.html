@@ -44,10 +44,10 @@
       <div id="rightOptions" class="editor-el">
         <div class="essays-container">
           <ul class="essay-buttons-ul">
-            <li ng-repeat="item in vm.authrEssayDataStructure" class="essays-list-li">
-              <div class="essay-list-item">
+            <li ng-repeat="item in vm.authorEssayDataStructure" class="essays-list-li">
+              <div class="essay-list-item" ng-click="vm.showRespectveEssay(item.id)">
                 <div class="essay-name">
-                  <div class="essay-title">{{item.essay.title}}</div>
+                  <div class="essay-title">"{{item.essay.title}}"</div>
                   <div class="essay-author-name">by {{item.author.name}}</div>
                 </div>
                 <div class="underline">

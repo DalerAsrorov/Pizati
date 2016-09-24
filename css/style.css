@@ -344,6 +344,10 @@ ul li{
   font-size: 13px;
 }
 
+essay-list-item:hover {
+  cursor: pointer;
+}
+
 .essays-container {
   text-align: center;
 }
