@@ -2,17 +2,17 @@ angular
   .module('app', ['ngRoute'])
   .config(function($routeProvider) {
     $routeProvider
-      .when('/', {
+      .when('/editor', {
         templateUrl: '/templates/pizati.html',
         controller: 'PizatiCtrl',
         controllerAs: 'vm'
       })
-      .when('/dasbhoard', {
+      .when('/dashboard', {
         templateUrl: '/templates/dashboard.html',
         controller: 'DashCtrl',
         controllerAs: 'vm'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/editor'
       });
   });
