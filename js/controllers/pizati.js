@@ -9,6 +9,20 @@ angular
     vm.currentEssay = "Argumentative Essay";
     vm.authorEssayDataStructure = null;
 
+    setEditorHeight();
+    window.addEventListener("resize", function() {
+      console.log('Resize method is applied to the window.');
+      setEditorHeight();
+    });
+
+    function setEditorHeight() {
+      var browserHeight = isNaN(window.innerHeight) ? window.clientHeight : window.innerHeight;
+      // var height = isNaN(window.innerHeight) ? window.clientHeight : window.innerHeight;
+      var fixedEditorHeight = browserHeight * 0.90;
+      console.log(fixedEditorHeight);
+      document.getElementById("superDivEditor").style.height = (fixedEditorHeight + "px").toString();
+    };
+
     var options = {
       debug: 'info',
       modules: {
