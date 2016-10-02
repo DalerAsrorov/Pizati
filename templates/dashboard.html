@@ -1,27 +1,74 @@
 <div class="wrapper" id="pizatiDashboardWrapper">
   <div id="tutorialsWrapper">
-    <ul>
-      <li class="tutorial-li">
-        <a class="full" href="#"></a>
-      </li>
-      <li class="tutorial-li line-li">
-        <div class="vertical_line"></div>
-      </li>
-      <li class="tutorial-li">
-        <a class="full" href="#"></a>
-      </li>
-      <li class="tutorial-li">
-        <a class="full" href="#"></a>
-      </li>
-      <li class="tutorial-li">
-        <a class="full" href="#"></a>
-      </li>
-      <li class="tutorial-li">
-        <a class="full" href="#"></a>
-      </li>
-      <li class="tutorial-li">
-        <a class="full" href="#"></a>
-      </li>
-    </ul>
+    <div class="tutorials">
+      <ul>
+        <li class="tutorial-li">
+          <a class="full" href="#">
+            <div class="add-sign-wrapper">
+              <span class="glyphicon glyphicon-plus add-sign"></span>
+            </div>
+            <div class="bottom-caption">
+                <span>New</span>
+            </div>
+          </a>
+        </li>
+        <li class="tutorial-li line-li" >
+          <div class="vertical_line"></div>
+        </li>
+        <li class="tutorial-li" ng-repeat="item in vm.essayTutorials">
+          <div class="essay-name-wrapper">
+            <a class="full link-category" href="#"> {{ item.name }} </a>
+          </div>
+        </li>
+        <li class="tutorial-li">
+          <a class="full" href="#"></a>
+        </li>
+        <li class="tutorial-li">
+          <a class="full" href="#"></a>
+        </li>
+        <li class="tutorial-li">
+          <a class="full" href="#"> </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="classesWrapper">
+    <div class="proper-sub-wrapper">
+      <div class="header-wrapper">
+        <span class="h5">Your classes</span>
+      </div>
+      <div class="classes-table">
+        <table class="table table-hover table-bordered class-table">
+          <thead>
+            <tr>
+              <th>Section</th>
+              <th>Course</th>
+              <th>Professor</th>
+              <th>Option</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="item in vm.classesList">
+              <td>{{ item.section }}</td>
+              <td>{{ item.course }}</td>
+              <td>{{ item.professor }}</td>
+              <td>{{ item.option }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div id="existingProjectsWrapper">
+    <div class="proper-sub-wrapper">
+      fdsdsfdsf
+      <!-- <ul>
+        <li class="tutorial-li" ng-repeat="item in vm.existingProjectsList">
+          <div class="essay-name-wrapper">
+            <a class="full" href="#"> {{ item.class }} </a>
+          </div>
+        </li>
+      </ul> -->
+    </div>
   </div>
 </div>
