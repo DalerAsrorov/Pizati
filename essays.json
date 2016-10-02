@@ -57,7 +57,37 @@
         },
         "essay": {
           "title": "Dark Nights",
-          "text": "Essay 5 Text."
+          "text": "Essay 6 Text."
+        }
+      },
+      {
+        "id": 6,
+        "author": {
+          "name": "Double Shey"
+        },
+        "essay": {
+          "title": "Light Nights",
+          "text": "Essay 7 Text."
+        }
+      },
+      {
+        "id": 7,
+        "author": {
+          "name": "Bella Pita"
+        },
+        "essay": {
+          "title": "Heugo",
+          "text": "Essay 8 Text."
+        }
+      },
+      {
+        "id": 8,
+        "author": {
+          "name": "Alexander Pushkin"
+        },
+        "essay": {
+          "title": "Ship",
+          "text": "Essay 9 Text."
         }
       }
     ]

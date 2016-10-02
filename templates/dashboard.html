@@ -15,19 +15,13 @@
         <li class="tutorial-li line-li" >
           <div class="vertical_line"></div>
         </li>
-        <li class="tutorial-li" ng-repeat="item in vm.essayTutorials">
+        <li class="tutorial-li" ng-repeat="item in vm.essayTutorials|limitTo:5">
           <div class="essay-name-wrapper">
             <a class="full link-category" href="#"> {{ item.name }} </a>
           </div>
         </li>
         <li class="tutorial-li">
           <a class="full" href="#"></a>
-        </li>
-        <li class="tutorial-li">
-          <a class="full" href="#"></a>
-        </li>
-        <li class="tutorial-li">
-          <a class="full" href="#"> </a>
         </li>
       </ul>
     </div>
