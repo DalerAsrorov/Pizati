@@ -616,3 +616,9 @@ essay-list-item:hover {
   margin: 0 auto;
   height: 100%;
 }
+
+.custom-form-control {
+  height: 20px;
+  width: 50%;
+  margin: 0 auto;
+}

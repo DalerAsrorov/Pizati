@@ -46,7 +46,14 @@
               <td>{{ item.section }}</td>
               <td>{{ item.course }}</td>
               <td>{{ item.professor }}</td>
-              <td>{{ item.option }}</td>
+              <td>
+                {{ item.option }}
+                <select class="form-control custom-form-control">
+                  <option value="one"></option>
+                  <option value="one">Edit</option>
+                  <option value="two">Delete</option>
+               </select>
+              </td>
             </tr>
           </tbody>
         </table>
