@@ -1,13 +1,15 @@
 // PizatiCtrl
 angular
   .module('app')
-  .controller('PizatiCtrl', function($http) {
+  .controller('PizatiCtrl', function($http, getEssayType) {
     var vm = this;
     var textEditorColor = '#002b36';
     vm.test = "Test";
     vm.title = "Pizati";
     vm.currentEssay = "Argumentative Essay";
     vm.authorEssayDataStructure = null;
+    vm.essayType = getEssayType;
+    console.log(vm.essayType);
 
     setEditorHeight();
     window.addEventListener("resize", function() {

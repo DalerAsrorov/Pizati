@@ -18,7 +18,7 @@
         <!-- <li class="tutorial-li" ng-repeat="item in vm.essayTutorials|limitTo:6"> -->
         <li class="tutorial-li" ng-repeat="item in vm.essayTutorials">
           <div class="essay-name-wrapper">
-            <a class="full link-category" href="#"> {{ item.name }} </a>
+            <a class="full link-category" ng-href="#/editor/{{item.name}}"> {{ item.name }} </a>
           </div>
         </li>
       </ul>
