@@ -8,10 +8,11 @@ app.use(function(req, res, next) {
 });
 
 app.use(express.static(__dirname + '/'));
+app.set('port', (process.env.PORT || 3000));
 
-var server = app.listen(8000, function () {
+var server = app.listen(app.get('port'), function () {
   var host = server.address().address
   var port = server.address().port
 
-  console.log("Pizati is listening at http://%s:%s", host, port)
+  console.log("Pizati listening at http://%s:%s", host, port)
 });
