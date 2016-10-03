@@ -125,7 +125,6 @@ ul li{
 
 #existingProjectsWrapper {
   padding: 10px;
-  overflow: auto;
 }
 
 #tutorialsWrapper ul {
@@ -706,9 +705,9 @@ essay-list-item:hover {
   height: 50px;
   margin: 0;
   float: right;
-  position: relative;
-  top: -150px;
-  left: -30px;
+  position: absolute;
+  right: 30px;
+  top: 100px;
 }
 
 .btn.expand-button {
