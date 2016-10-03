@@ -62,14 +62,25 @@
   </div>
   <div id="existingProjectsWrapper">
     <div class="proper-sub-wrapper">
-      fdsdsfdsf
-      <!-- <ul>
+      <div class="header-wrapper">
+        <span class="h5">Recent Projects</span>
+      </div>
+      <ul class="new-projects">
         <li class="tutorial-li" ng-repeat="item in vm.existingProjectsList">
-          <div class="essay-name-wrapper">
-            <a class="full" href="#"> {{ item.class }} </a>
+          <div class="essay-name-wrapper li-div">
+            <a class="full link-category existing-a" href="#">
+              <ul>
+                <li>{{ item.class }}</li>
+                <li>
+                  <div class="existing-progress-bar">
+                    {{ item.progress }} {{ item.progressType }}
+                  </div>
+                </li>
+              </ul>
+            </a>
           </div>
         </li>
-      </ul> -->
+      </ul>
     </div>
   </div>
 </div>
