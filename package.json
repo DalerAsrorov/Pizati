@@ -1,0 +1,22 @@
+{
+  "name": "pizati",
+  "version": "1.0.0",
+  "description": "\"An application that helps students have a better experience and learning curve in writing essays.\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DalerAsrorov/Pizati.git"
+  },
+  "author": "Daler Asrorov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DalerAsrorov/Pizati/issues"
+  },
+  "homepage": "https://github.com/DalerAsrorov/Pizati#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
