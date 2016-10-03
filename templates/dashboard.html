@@ -15,15 +15,18 @@
         <li class="tutorial-li line-li" >
           <div class="vertical_line"></div>
         </li>
-        <li class="tutorial-li" ng-repeat="item in vm.essayTutorials|limitTo:5">
+        <!-- <li class="tutorial-li" ng-repeat="item in vm.essayTutorials|limitTo:6"> -->
+        <li class="tutorial-li" ng-repeat="item in vm.essayTutorials">
           <div class="essay-name-wrapper">
             <a class="full link-category" href="#"> {{ item.name }} </a>
           </div>
         </li>
-        <li class="tutorial-li">
-          <a class="full" href="#"></a>
-        </li>
       </ul>
+    </div>
+    <div class="expand-button-wrapper">
+      <button type="button" class="btn btn-default expand-button" name="button" ng-click="vm.expandContract()">
+        <span class="glyphicon glyphicon-triangle-bottom expand-span"></span>
+      </button>
     </div>
   </div>
   <div id="classesWrapper">

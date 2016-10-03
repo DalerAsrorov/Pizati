@@ -24,6 +24,12 @@ angular
       },
       {
         name: "Whatever Essay"
+      },
+      {
+        name: "Summary Essay"
+      },
+      {
+        name: "Perspective Essay"
       }
     ];
 
@@ -68,5 +74,24 @@ angular
         "progressType": "%"
       }
     ];
+
+    var originalExpandHeight = document.getElementById('tutorialsWrapper').clientHeight;
+    vm.expandContract = function() {
+      var divID = 'tutorialsWrapper';
+      var clientHeight = document.getElementById(divID).clientHeight;
+      console.log(clientHeight);
+      if(clientHeight !== 450) {
+        console.log(clientHeight);
+        $("#"+divID).animate({
+          height: "450px"
+        }, 500);
+      } else {
+        console.log('height', clientHeight);
+        $("#"+divID).animate({
+          height: originalExpandHeight + "px"
+        }, 500);
+      }
+
+    }
 
 });

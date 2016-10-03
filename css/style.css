@@ -120,7 +120,7 @@ ul li{
   height: 230px;
   background: #fff;
   padding: 10px;
-  overflow: auto;
+  overflow: hidden;
 }
 
 #existingProjectsWrapper {
@@ -168,6 +168,7 @@ ul li{
   width: 100%;
   display: block;
   line-height: 12.5;
+  font-size: 12px;
 }
 
 #tutorialsWrapper ul li:hover {
@@ -549,6 +550,7 @@ essay-list-item:hover {
 .essay-name-wrapper {
   width: 100%;
   /*margin-top: 50%;*/
+  height: 100%;
 }
 
 .essay-name-wrapper a {
@@ -693,4 +695,23 @@ essay-list-item:hover {
   border-radius: 50%;
   padding: 10px;
   text-align: center;
+}
+
+.expand-button-wrapper {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  float: right;
+  position: relative;
+  top: -150px;
+  left: -30px;
+}
+
+.btn.expand-button {
+  width: 100%;
+  height: 100%;
+}
+
+.expand-span {
+
 }
