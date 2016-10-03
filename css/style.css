@@ -186,6 +186,10 @@ ul li{
   top: 15px;
 }
 
+#expandEssaysSpan{
+
+}
+
 .full {
   width: 100%;
   height: 100%;
@@ -710,8 +714,4 @@ essay-list-item:hover {
 .btn.expand-button {
   width: 100%;
   height: 100%;
-}
-
-.expand-span {
-
 }

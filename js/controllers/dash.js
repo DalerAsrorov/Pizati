@@ -78,6 +78,7 @@ angular
     var originalExpandHeight = document.getElementById('tutorialsWrapper').clientHeight;
     vm.expandContract = function() {
       var divID = 'tutorialsWrapper';
+      $("#expandEssaysSpan").toggleClass("glyphicon glyphicon-triangle-bottom glyphicon glyphicon-triangle-top");
       var clientHeight = document.getElementById(divID).clientHeight;
       console.log(clientHeight);
       if(clientHeight !== 450) {
