@@ -21,6 +21,6 @@ angular
         controllerAs: 'vm'
       })
       .otherwise({
-        redirectTo: '/editor'
+        redirectTo: '/dashboard'
       });
   });
