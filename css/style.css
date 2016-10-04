@@ -18,6 +18,10 @@ ul li{
     list-style-type: none;
 }
 
+nav {
+  background: #366aff;
+}
+
 #navContainer {
   margin: 0;
   width: 100%;
@@ -216,11 +220,9 @@ ul li{
 }
 
 .nav-section {
-  height: 60px;
+  height: 50px;
   background: #366aff;
   color: #fff;
-  border-right: 1px solid #fff;
-
 }
 
 .nav-button-section  {
@@ -233,7 +235,6 @@ ul li{
   height: 100%;
   width: 70%;
   color: #27acf1;
-  line-height: 1.65;
 }
 
 .nav-el {
@@ -243,7 +244,7 @@ ul li{
 }
 
 .nav-glyph {
-  font-size: 40px;
+  font-size: 35px;
   border-radius: 0;
   color: #fff;
 }
@@ -254,7 +255,7 @@ ul li{
   width: 100%;
   border-radius: 0;
   position: relative;
-  top: 10px;
+  top: 2px;
   left: 15px;
 }
 
@@ -318,6 +319,11 @@ ul li{
     background: none;
 }
 
+.sub-nav-row {
+  width: 90%;
+  margin: 0 auto;
+}
+
 @media(min-width:768px) {
     #wrapper {
         padding-left: 250px;
@@ -365,7 +371,7 @@ ul li{
 
 .navbar {
   margin: 0;
-  background: #fff;
+  background: #366aff;
 }
 
 .sub-nav {
