@@ -195,7 +195,7 @@ nav {
 }
 
 #toolbarSub {
-  width: 60%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -730,4 +730,8 @@ essay-list-item:hover {
 .ql-formats {
   display: inline-block;
   vertical-align: middle;
+}
+
+.ql-editor p:not(:first-child){
+  margin-top: 15px;
 }
