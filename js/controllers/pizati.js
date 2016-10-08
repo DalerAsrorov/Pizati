@@ -11,7 +11,7 @@ angular
     vm.essayType = getEssayType;
     console.log(vm.essayType);
 
-    setEditorHeight();
+    initEditor();
 
     window.addEventListener("resize", function() {
       setEditorHeight();
@@ -121,6 +121,7 @@ angular
 
     retrieveEssays(essasyApiUrl, function(response) {
       vm.authorEssayDataStructure = response.data.essays;
+      loadFirstEssay();
     });
 
     // this methodshow buttons, tooltips, and commands
@@ -140,7 +141,19 @@ angular
           inputText(element.essay.text);
         }
       });
-
     };
+
+    function loadFirstEssay() {
+        loadEssay(0);
+    }
+
+    function loadEssay(index) {
+      var dataStr = vm.authorEssayDataStructure;
+      inputText(dataStr[index].essay.text);
+    }
+
+    function initEditor() {
+      setEditorHeight();
+    }
 
 });
