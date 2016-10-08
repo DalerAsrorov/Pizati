@@ -12,14 +12,13 @@ angular
     console.log(vm.essayType);
 
     setEditorHeight();
+
     window.addEventListener("resize", function() {
-      console.log('Resize method is applied to the window.');
       setEditorHeight();
     });
 
     function setEditorHeight() {
       var browserHeight = isNaN(window.innerHeight) ? window.clientHeight : window.innerHeight;
-      // var height = isNaN(window.innerHeight) ? window.clientHeight : window.innerHeight;
       var fixedEditorHeight = browserHeight * 0.90;
       console.log(fixedEditorHeight);
       document.getElementById("superDivEditor").style.height = (fixedEditorHeight + "px").toString();
@@ -114,8 +113,7 @@ angular
 
     function inputText(text) {
       console.log('text to input', text);
-      var textLength = text.length;
-      quill.deleteText(0, textLength);
+      quill.deleteText(0, text.length);
       quill.insertText(0, text, {
         'color': textEditorColor
       });
