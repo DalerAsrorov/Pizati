@@ -508,16 +508,18 @@ essay-list-item:hover {
 }
 
 .essay-part-button-li {
-  padding: 5px;
   background: white;
   border: 1px solid lightgrey;
   width: 100%;
   text-align: center;
   font-weight: 700;
+  padding: 0;
 }
 
-.essay-part-button {
-
+.btn.essay-part-button {
+  border-radius: 0;
+  border: none;
+  font-size: 12px;
 }
 
 .start-message-wrapper {
@@ -732,6 +734,10 @@ essay-list-item:hover {
   vertical-align: middle;
 }
 
-.ql-editor p:not(:first-child){
+/*.ql-editor p:not(:first-child){
   margin-top: 15px;
+}*/
+
+.highlight-p {
+  background: #f3d1d1;
 }

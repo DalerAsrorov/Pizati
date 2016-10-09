@@ -4,6 +4,7 @@ angular
   .controller('PizatiCtrl', function($http, getEssayType) {
     var vm = this;
     var textEditorColor = '#002b36';
+    var essayStructureMap = {};
     vm.test = "Test";
     vm.title = "Pizati";
     vm.currentEssay = "Argumentative Essay";
@@ -143,6 +144,32 @@ angular
       });
     };
 
+    vm.highlightText = function(essayElementName) {
+      var lowercaseName = essayElementName.toLowerCase();
+      var editorDivChildren = $("#editor").find("p");
+      var redElements = document.querySelectorAll('#editor p');
+      console.log('redElements', redElements);
+
+      switch(lowercaseName)
+      {
+          case "introduction":
+            clearAllHighlights(redElements);
+            highlightIntro(redElements);
+            break;
+          case "body":
+            essayStructureMap[lowercaseName] = [];
+            clearAllHighlights(redElements);
+            highLightBody(redElements);
+            break;
+          case "conclusion":
+            clearAllHighlights(redElements);
+            highlightConclusion(redElements);
+            break;
+          default:
+            console.log("didn't find associate essay element.");
+      }
+    }
+
     function loadFirstEssay() {
         loadEssay(0);
     }
@@ -154,6 +181,65 @@ angular
 
     function initEditor() {
       setEditorHeight();
+    }
+
+    function highlightTextOn(element) {
+      element.style.background = "#e0ebff"
+    }
+
+    function clearAllHighlights(collection) {
+      collection.forEach(function(node) {
+        node.removeAttribute('style');
+      });
+    }
+
+    function highLightBody(collection) {
+      if(collection.length <= 1)
+        return;
+
+      var start = findFirstIndex(collection);
+
+      var lastIndex = findLastIndex(collection);
+      for(var i = start; i < lastIndex; ++i) {
+        console.log(collection[i].innerText);
+        highlightTextOn(collection[i]);
+      }
+    }
+
+    function highlightConclusion(collection) {
+      var lastIndex = findLastIndex(collection);
+      for(var i = lastIndex + 1; i < collection.length; i++) {
+          highlightTextOn(collection[i]);
+      }
+    }
+
+    function highlightIntro(collection) {
+      var firstIndex = findFirstIndex(collection);
+      console.log(firstIndex);
+      for(var i = 0; i < firstIndex - 1; ++i) {
+        highlightTextOn(collection[i]);
+      }
+    }
+
+    function findFirstIndex(collection) {
+      var start = 0;
+      for(var i = 0; i < collection.length; ++i) {
+        if (collection[i].innerText == "\n") {
+          start = i + 1;
+          break;
+        }
+      }
+      return start;
+    }
+
+    function findLastIndex(collection) {
+      var lastIndex = collection.length - 3; // last paragraph.
+      for(var i = lastIndex; i > 0; i++) {
+        console.log(collection[i]);
+        if(collection[i].innerText == "\n")
+          return i;
+      }
+      return lastIndex;
     }
 
 });

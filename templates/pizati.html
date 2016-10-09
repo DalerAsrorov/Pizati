@@ -64,7 +64,7 @@
           </div>
           <ul id="buttonsList" ng-show="vm.essayStarted">
             <li ng-repeat="item in vm.customEssayButtons" class="essay-part-button-li">
-              <a href="#" class="essay-part-button"> {{ item.name }} </a>
+              <button href="#" ng-click="vm.highlightText(item.name)" class="btn btn-default full essay-part-button"> {{ item.name }} </button>
             </li>
           </ul>
         </div>
